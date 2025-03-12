@@ -1,0 +1,11 @@
+@server=http://localhost:4004
+@service=/odata/v4/admin
+
+GET {{server}}{{service}}/MaintananceItem
+
+POST {{server}}{{service}}/MaintananceItem
+Content-Type: application/json
+
+{
+    "problemDescription": "test"
+}
